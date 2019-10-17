@@ -1,9 +1,9 @@
-var express=require("express"),
-app=express(),
-bodyparser=require("body-parser"),
-expressSanitizer=require("express-sanitizer"),
+var express = require("express"),
+app = express(),
+bodyparser = require("body-parser"),
+expressSanitizer = require("express-sanitizer"),
 
-mongoose=require("mongoose");
+mongoose = require("mongoose");
 
 mongoose.connect("mongodb://localhost/blog_app", { useNewUrlParser: true });
 mongoose.set('useFindAndModify', false);
